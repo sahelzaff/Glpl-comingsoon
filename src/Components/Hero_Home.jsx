@@ -33,7 +33,7 @@ const Hero_Home = () => {
                             Goodrich Logistics is revolutionizing container transport for businesses worldwide.
                         </p>
                     </div>
-                    <div className='pt-10'>
+                    <div className='pt-10 w-full flex items-center justify-center'>
                         <div className="relative flex items-center w-full max-w-xs sm:max-w-sm">
                             <div className="flex items-center border rounded-full border-gray-300 bg-white p-2">
                                 <span className="p-2">
