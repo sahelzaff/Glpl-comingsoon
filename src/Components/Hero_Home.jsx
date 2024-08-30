@@ -44,7 +44,7 @@ const Hero_Home = () => {
                                     value={email}
                                     onChange={handleChange}
                                     placeholder="Enter your email address"
-                                    className="flex-grow py-2 px-4 rounded-full border-none focus:outline-none text-sm sm:text-base"
+                                    className="flex-grow py-2 px-0 rounded-full border-none focus:outline-none text-sm sm:text-base"
                                 />
                                 <button
                                     disabled={!isButtonEnabled}
