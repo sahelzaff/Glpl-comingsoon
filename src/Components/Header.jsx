@@ -33,10 +33,10 @@ const Header = () => {
                         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
                     } z-50`}
                 >
-                    <div className="flex justify-between p-4 border-b border-gray-300">
-                        <div className="text-xl sm:text-2xl font-bold font-outfit text-white">Menu</div>
+                    <div className="flex justify-end p-4 ">
+                        {/* <div className="text-xl sm:text-2xl font-bold font-outfit text-white">Menu</div> */}
                         <AiOutlineClose
-                            className="text-xl sm:text-2xl cursor-pointer text-white"
+                            className="text-xl sm:text-3xl cursor-pointer text-white"
                             onClick={toggleMenu}
                         />
                     </div>
@@ -44,7 +44,7 @@ const Header = () => {
                         {['HOME', 'ABOUT US', 'VISION AND MISSION', 'MANAGEMENT TEAM', 'SERVICES', 'CAREERS', 'BLOGS'].map((item, index) => (
                             <li
                                 key={index}
-                                className="text-base sm:text-lg font-poppins text-white cursor-pointer hover:text-gray-100 hover:translate-x-1 transition-transform duration-300"
+                                className="text-base sm:text-lg font-poppins text-white cursor-pointer hover:text-gray-100 hover:font-semibold hover:translate-x-2 transition-transform duration-75 "
                             >
                                 {item}
                             </li>
