@@ -90,7 +90,7 @@ const Hero_Home = () => {
                 </div>
                 <div className='w-full pb-2'>
                     <p className='w-full font-poppins text-white text-center text-xs sm:text-sm'>
-                        Copyright 2024 © Goodrich Logistics. All Right Reserved.
+                        Copyright 2024 © Goodrich Fair & Events. All Rights Reserved.
                     </p>
                 </div>
             </div>
