@@ -58,11 +58,11 @@ const Hero_Home = () => {
                         <p className='font-poppins text-sm md:text-base lg:text-lg text-gray-300' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                             We're preparing something exciting! Our events page will showcase soon
                         </p>
-                        <p className='font-poppins text-sm md:text-base lg:text-lg text-gray-300' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                            For any queries please enter your email address to notify is
+                        <p className='font-poppins text-sm md:text-base lg:text-lg text-gray-300 pt-8' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                            For any queries please enter your email address to notify us
                         </p>
                     </div>
-                    <div className='pt-10 w-full flex items-center justify-center' data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
+                    <div className=' pt-1 w-full flex items-center justify-center' data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
                         <div className="relative flex items-center w-full max-w-lg">
                             <div className="flex items-center border rounded-full border-gray-300 bg-white p-2 w-full">
                                 <span className="p-2">
@@ -73,7 +73,7 @@ const Hero_Home = () => {
                                     value={email}
                                     onChange={handleChange}
                                     placeholder="Enter your email address"
-                                    className="flex-grow py-2 px-0 rounded-full border-none focus:outline-none text-sm sm:text-base md:text-lg"
+                                    className="flex-grow py-2 px-4 rounded-full border-none focus:outline-none text-sm sm:text-base md:text-lg"
                                 />
                                 <button
                                     onClick={handleNotify}
