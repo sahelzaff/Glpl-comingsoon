@@ -56,10 +56,10 @@ const Hero_Home = () => {
                     </h1>
                     <div className='pt-2'>
                         <p className='font-poppins text-sm md:text-base lg:text-lg text-gray-300' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                            We're preparing something exciting! Our events page will showcase how
+                            We're preparing something exciting! Our events page will showcase soon
                         </p>
                         <p className='font-poppins text-sm md:text-base lg:text-lg text-gray-300' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                            For any queries please enter your email address
+                            For any queries please enter your email address to notify is
                         </p>
                     </div>
                     <div className='pt-10 w-full flex items-center justify-center' data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
