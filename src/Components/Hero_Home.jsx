@@ -48,7 +48,7 @@ const Hero_Home = () => {
                 preload="auto"  
                 playsInline  
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
 
             <div className="relative flex flex-col items-center justify-between h-full w-full max-w-screen-2xl p-4">
                 <div className='w-full'>
