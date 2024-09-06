@@ -6,6 +6,8 @@ import { AiOutlineCheckCircle } from 'react-icons/ai';
 import Header from './Header';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import '../index.css'
+
 
 const Hero_Home = () => {
     const [email, setEmail] = useState('');
@@ -25,24 +27,26 @@ const Hero_Home = () => {
     const handleNotify = () => {
         if (isButtonEnabled) {
             setShowModal(true);
-            setEmail(''); 
-            setIsButtonEnabled(false); 
+            setEmail('');
+            setIsButtonEnabled(false);
 
             setTimeout(() => {
                 setShowModal(false);
-            }, 3000); 
+            }, 3000);
         }
     };
 
     return (
         <div className="relative h-screen bg-cover bg-center flex items-center justify-center">
+            {/* Optimized Video Settings */}
             <video
                 className="absolute inset-0 w-full h-full object-cover"
                 src={assets.bg_coming_soon}
                 autoPlay
                 muted
                 loop
-                playsInline
+                preload="auto"  
+                playsInline  
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
 
@@ -62,8 +66,10 @@ const Hero_Home = () => {
                             For any queries please enter your email address to notify us
                         </p>
                     </div>
-                    <div className=' pt-1 w-full flex items-center justify-center' data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
+                    {/* Email Input and Notify Button Container */}
+                    <div className='pt-1 w-full flex items-center justify-center' data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1000">
                         <div className="relative flex items-center w-full max-w-lg">
+                            {/* Keep everything inside a single container */}
                             <div className="flex items-center border rounded-full border-gray-300 bg-white p-2 w-full">
                                 <span className="p-2">
                                     <FaEnvelope className="text-glplred text-xl md:text-2xl" />
@@ -75,10 +81,11 @@ const Hero_Home = () => {
                                     placeholder="Enter your email address"
                                     className="flex-grow py-2 px-4 rounded-full border-none focus:outline-none text-sm sm:text-base md:text-lg"
                                 />
+                                {/* Adjust button size for mobile */}
                                 <button
                                     onClick={handleNotify}
                                     disabled={!isButtonEnabled}
-                                    className={`py-2 px-4 rounded-full text-white flex gap-2 items-center transition-colors font-poppins duration-300 ${isButtonEnabled ? 'bg-red-600 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}`}
+                                    className={`py-2 px-4 ml-2 rounded-full text-white flex gap-2 items-center transition-colors font-poppins duration-300 ${isButtonEnabled ? 'bg-red-600 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}`}
                                 >
                                     <div className='text-xl md:text-2xl'>
                                         <CiBellOn />

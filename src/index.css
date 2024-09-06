@@ -12,3 +12,21 @@
     border-radius: 10px;
     /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
+
+@media (max-width: 400px) {
+    .flex.items-center.w-full.max-w-lg {
+        flex-direction: column; /* Stack elements on very small screens */
+    }
+
+    .flex.items-center.w-full.max-w-lg .border {
+        flex-direction: column; /* Stack input and button vertically */
+        align-items: center; /* Center items */
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .flex.items-center.w-full.max-w-lg input,
+    .flex.items-center.w-full.max-w-lg button {
+        width: 100%; /* Make both input and button take full width */
+        margin: 0.2rem 0; /* Adjust margins */
+    }
+}
